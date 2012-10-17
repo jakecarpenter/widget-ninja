@@ -24,13 +24,18 @@
 				stylesheetLink.setAttribute('href',stylesheet);
 				
 				//apply the stylesheet
-				iframeDoc.contentWindow.document.getElementsByTagName('head')[0].appendChild(stylesheetLink);
+				if(!iframeDoc.contentWindow.document.getElementsByTagName('head')[0].appendChild(stylesheetLink)){
+					fixStyle();
+				}
 			}
 			else {
 				fixStyle();
 			}
 		},200);}();
-		//this is twitters:
+		</script>
+		
+		<script>
+		//this is the twitter widget stuff:
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;	js.src="//platform.twitter.com/widgets.js";	fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
