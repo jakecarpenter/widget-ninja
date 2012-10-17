@@ -1,0 +1,38 @@
+<html>
+	<body>
+		
+		<a class="twitter-timeline" data-dnt=true href="https://twitter.com/jakecarpenter" data-widget-id="258313487485386752">Tweets by @jakecarpenter</a>
+		<script>
+		/*
+		 * There is probably a better way to do this, but i didnt read the twitters docs, so this is what you get.
+		 * the css must be on  
+		 */
+		var fixStyle = function(){setTimeout(function (){
+			//as far as i can tell, this starts with zero and increments for each widget on page.
+			var widgetId = 'twitter-widget-0';
+
+			//put whatever stylesheet you want in here.
+			var stylesheet = "mytwitter.css";
+			
+			//dont touch.
+			if(document.getElementById(widgetId) != 'undefined'){
+				var iframeDoc = document.getElementById(widgetId);	
+				
+				var stylesheetLink = document.createElement('link');
+				stylesheetLink.setAttribute('rel','stylesheet');
+				stylesheetLink.setAttribute('type','text/css');
+				stylesheetLink.setAttribute('href',stylesheet);
+				
+				//apply the stylesheet
+				iframeDoc.contentWindow.document.getElementsByTagName('head')[0].appendChild(stylesheetLink);
+			}
+			else {
+				fixStyle();
+			}
+		},200);}();
+		//this is twitters:
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;	js.src="//platform.twitter.com/widgets.js";	fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+	</body>
+</html> 

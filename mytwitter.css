@@ -1,0 +1,35 @@
+div.timeline-header{
+	background-color: gray;
+}
+
+h1.summary{
+	font-family:"Times New Roman", Times, serif;
+}
+
+div.stream{
+	
+}
+
+ol.h-feed{
+	
+} 
+
+li.tweet{
+	background-color: #aaffaa;
+}
+
+li.tweet:nth-child(odd){
+	background-color: #66ff66;
+}
+
+li.h-entry{
+	
+}
+
+button.load-more{
+	
+}
+
+button.tweet-box-button{
+	
+}
