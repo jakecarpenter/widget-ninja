@@ -3,3 +3,7 @@ This is a super(stupid?) simple twitter widget restyler that uses an external st
 
 #demo
 there is a demo at http://jakecarpenter.com/widget-ninja/
+
+#faq
+__Why is it called widget ninja?__
+_Because thats what github suggested._ 
